@@ -11,12 +11,11 @@ SELECT * FROM
 SELECT email
 FROM customer;
 
-Displaying Mulitple Columns
-~~~SQL
+<p>Displaying Mulitple Columns</p>
+
 SELECT first_name, last_name, email
 FROM customer;
 
-~~~SQL
 SELECT email, last_name, first_name
 FROM customer;
 
