@@ -47,7 +47,7 @@ SELECT * FROM customer
 WHERE first_name = 'Bob';
 ```
 
-<h6>Comparison Operators</h6>
+<p>Comparison Operators</p>
 <p>= means equal to</p>
 <p>< means less than</p>
 <p><= means less than or equal to</p>
