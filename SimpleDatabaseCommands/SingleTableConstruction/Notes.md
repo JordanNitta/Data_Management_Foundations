@@ -4,7 +4,7 @@ SQL Clauses
 <li>The wild card operator which is the * which stands for ALL columns.</li>
 <li>The second clause is the WHERE its used to filter records, and inly return those rows/records when they fulfil a specific condition.</li>
 </ul>
-~~~SQL 
+
 SELECT * FROM   
 <tablename>;
 
@@ -63,6 +63,50 @@ SELECT * FROM invoice
 WHERE total >= 14;
 ```
 
+<p>LIKE to Search Data</p>
+<h6>The % represents zero, or more character or numbers</h6>
+<h6>The underscore _ represents a single character or numbers</h6>
+
+<p>The % Operator</p>
+<h6>If we wanted to query our table and list all names that start with the letter L we would use the % wildcard operator after the Letter L</h6>
+
+```SQL
+SELECT * FROM customer
+WHERE first_name LIKE 'L%';
+```
+<h6>If we wanted the letter before are given value we would put the wildcard in front</h6>
+
+```SQL
+SELECT * FROM customer
+WHERE email LIKE '%@gmail.com'; 
+```
+
+<p>The _ Operator</p>
+<h6>This allows us to look for a specific length of character</h6>
+
+```SQL
+SELECT * FROM customer
+WHERE state LIKE 'C_'; -- Looks for two character starting with letter C
+
+SELECT * FROM customer
+WHERE state LIKE 'U__' -- Looks for three character starting with letter U
+```
+
+<p>Combining Wild Cards</p>
+
+```SQL
+SELECT * FROM customer
+WHERE last_name LIKE 'S__%';
+
+SELECT * FROM customer
+WHERE last_name LIKE 'S_______%r';
+
+SELECT * FROM customer
+WHERE phone LIKE '+1 (___) ___-____';
+
+SELECT * FROM customer
+WHERE email like 'm%@a%.%';
+```
 
 
  
