@@ -20,9 +20,9 @@ FROM customer;
 SELECT email, last_name, first_name
 FROM customer;
 ```
-```html
+
 <h6>Order by to sort data</h6>
-```
+
 ```SQL
 SELECT * FROM invoice ORDER BY billing_country;
 
@@ -30,18 +30,18 @@ SELECT customer_id, first_name, last_name
 FROM customer
 ORDER BY first_name;
 ```
-```html
+
 <h6>WHERE to Filter Data</h6>
 <p>If there no value that = that number then you will get a message saying Query ran successfully. 0 rows to display</p>
-```
+
 ```SQL
 SELECT * FROM customer
 WHERE customer_id = 1000;
 ```
-```html
+
 <h6>Filtering String</h6>
 <p>SQL requires single quotes around text values</p>
-```
+
 ```SQL
 SELECT * FROM customer
 WHERE first_name = 'Bob';
