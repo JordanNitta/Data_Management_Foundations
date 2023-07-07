@@ -2,7 +2,7 @@
 -- Answer FROM
 
 -- Which of these SELECT statements would successfully display exactly three columns of data from the customer table?
--- Answer: SELECT first_name, last_name, customer_id FROM customer 
+SELECT first_name, last_name, customer_id FROM customer 
 
 -- Using the ORDER BY clause, sort the employee table in the database by the last name of the employee in descending order. Identify the 6th last name in the list.
 SELECT * FROM employee
