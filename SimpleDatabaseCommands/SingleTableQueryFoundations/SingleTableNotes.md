@@ -108,8 +108,22 @@ SELECT * FROM customer
 WHERE email like 'm%@a%.%';
 ```
 
+<p>Multiple Filters</p>
 
- 
+```SQL
+SELECT * FROM customer
+WHERE country = 'USA'
+AND phone LIKE '%(212)%';
+
+SELECT * FROM customer
+WHERE country ='USA'
+AND support_rep_id = 3
+AND city LIKE 'C%';
+
+SELECT * FROM employee
+WHERE title = 'IT Manager'
+OR title = 'IT Staff';
+```
 
 
 
